@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oráculo da Matriz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Oráculo da Matriz</h1>
+            <p class="subtitle">Decodifique a realidade e acesse a verdade oculta</p>
+        </header>
+
+        <main class="game-area">
+            <div class="input-section" id="input-section">
+                <label for="user-question">Qual pergunta você deseja decodificar?</label>
+                <input type="text" id="user-question" placeholder="Sua pergunta..." autocomplete="off">
+                <button id="btn-draw">Sincronizar e Decodificar (R$ 1,00)</button>
+            </div>
+
+            <div id="payment-section" class="payment-section hidden">
+                <h2>🔮 Acesso à Frequência</h2>
+                <p>Confirme a conexão para revelar os dados.</p>
+                <div class="qr-container"><img id="qr-code-img" src="" alt="QR Code Pix"></div>
+                <input type="text" id="pix-copia-cola" readonly>
+                <button id="btn-copy-pix">Copiar Código Pix</button>
+                <p id="payment-status" class="payment-status">⏳ Sincronizando com a Matriz...</p>
+                <button id="btn-cancel-payment" class="btn-cancel">Cancelar</button>
+            </div>
+
+            <div class="tarot-table">
+                <div class="card-container"><div class="card" id="card-1"><div class="card-face card-back">🔮</div><div class="card-face card-front"><h3 class="card-title"></h3><div class="card-illustration"></div><p class="card-position-label">Origem</p></div></div></div>
+                <div class="card-container"><div class="card" id="card-2"><div class="card-face card-back">🔮</div><div class="card-face card-front"><h3 class="card-title"></h3><div class="card-illustration"></div><p class="card-position-label">Interferência</p></div></div></div>
+                <div class="card-container"><div class="card" id="card-3"><div class="card-face card-back">🔮</div><div class="card-face card-front"><h3 class="card-title"></h3><div class="card-illustration"></div><p class="card-position-label">Manifestação</p></div></div></div>
+            </div>
+
+            <div id="reading-result" class="reading-result hidden">
+                <h2>Dados Decodificados</h2>
+                <div id="reading-text" class="reading-text"></div>
+                <button id="btn-reset" class="btn-cancel">Nova Sincronização</button>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
