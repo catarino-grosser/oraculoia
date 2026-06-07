@@ -10,7 +10,7 @@ export default async (request, context) => {
             transaction_amount: 1.00,
             description: "Leitura de Tarot Místico",
             payment_method_id: "pix",
-            payer: { email: "cliente@oraculotarot.com" } // Email fictício obrigatório
+            payer: { email: "cliente@9888.com" } // Email fictício obrigatório
         };
 
         const respostaMP = await fetch("https://api.mercadopago.com/v1/payments", {
