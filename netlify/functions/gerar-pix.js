@@ -8,7 +8,7 @@ export default async (request, context) => {
     try {
         const pagamentoDados = {
             transaction_amount: 1.00,
-            description: "Leitura de Tarot Místico",
+            description: "acesso 9888",
             payment_method_id: "pix",
             payer: { email: "cliente@9888.com" } // Email fictício obrigatório
         };
